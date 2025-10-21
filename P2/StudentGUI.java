@@ -2,7 +2,24 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import javax.swing.*;
+/*
+command tu run
+javac -cp ".;.\mysql-connector-j-9.4.0.jar" StudentGUI.java
+java -cp ".;.\mysql-connector-j-9.4.0.jar" StudentGUI
 
+ sql query
+CREATE DATABASE studentdb;
+USE studentdb;
+
+CREATE TABLE student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    course VARCHAR(100)
+);
+  
+   
+ */
 public class StudentGUI extends JFrame implements ActionListener {
     JTextField idField, nameField, ageField;
     JButton insertBtn, updateBtn, deleteBtn, viewBtn;

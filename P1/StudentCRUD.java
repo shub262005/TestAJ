@@ -2,6 +2,12 @@ import java.sql.*;
 import java.util.Scanner;
 
 /*  
+    command tu run
+    javac -cp .;mysql-connector-j-9.4.0.jar StudentCRUD.java
+    java -cp .;mysql-connector-j-9.4.0.jar StudentCRUD
+
+
+
 
     MYSQL query
     CREATE DATABASE studentdb;
