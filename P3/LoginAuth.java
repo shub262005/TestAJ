@@ -2,7 +2,25 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import javax.swing.*;
+/*
+command to run;
+javac -cp ".;.\mysql-connector-j-9.4.0.jar" LoginAuth.java
+java -cp ".;.\mysql-connector-j-9.4.0.jar" LoginAuth
 
+mysql query
+CREATE DATABASE userdb;
+USE userdb;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50),
+    password VARCHAR(50)
+);
+
+-- Add one sample user for testing
+INSERT INTO users (username, password) VALUES ('admin', '1234');
+
+ */
 public class LoginAuth extends JFrame implements ActionListener {
     JTextField userField;
     JPasswordField passField;
